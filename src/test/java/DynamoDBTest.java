@@ -15,7 +15,7 @@ public class DynamoDBTest {
     public void testCreateTable(){
         System.setProperty(SDKGlobalConfiguration.DISABLE_CERT_CHECKING_SYSTEM_PROPERTY, "true");
         AmazonDynamoDB client = AmazonDynamoDBClientBuilder.standard()
-                .withEndpointConfiguration(new AwsClientBuilder.EndpointConfiguration("https://ec2-13-126-139-80.ap-south-1.compute.amazonaws.com:4566","us-west-2"))
+                .withEndpointConfiguration(new AwsClientBuilder.EndpointConfiguration("https://<remote/local ip/dns>:4566","us-west-2"))
                 .build();
 
         DynamoDB dynamoDB = new DynamoDB(client);
