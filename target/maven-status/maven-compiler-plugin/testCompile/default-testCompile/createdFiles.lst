@@ -1,0 +1,3 @@
+DynamoDBTest.class
+dockerLocalstackTest.class
+S3Test.class
